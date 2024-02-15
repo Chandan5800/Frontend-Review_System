@@ -40,7 +40,7 @@ export default function Login() {
     event.preventDefault();
     console.log(loginDetail);
 
-    if(loginDetail.username.trim() == '' || loginDetail.password.trim() == ''){
+    if(loginDetail.username.trim() === '' || loginDetail.password.trim() === ''){
       toast.error("Username and password is required...!!")
       return;
     }
